@@ -9,6 +9,5 @@ from django.http import HttpResponse
 
 
 class ArticleListView(ListView):
-    paginate_by = 4
     template_name = 'slideshow.html'
-    queryset = Article.objects.all()
+    queryset = Article.objects.filter(status='p')

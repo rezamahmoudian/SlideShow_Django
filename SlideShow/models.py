@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.utils.html import format_html
 from django.urls import reverse
 
 # Create your models here.
@@ -37,3 +38,6 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+    def image_post(self):
+        return format_html("<img width=150 height=130 border-radius: 5px; src='{}'>".format(self.image.url))
