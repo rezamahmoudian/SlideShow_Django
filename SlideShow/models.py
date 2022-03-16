@@ -40,4 +40,4 @@ class Article(models.Model):
         return self.title
 
     def image_post(self):
-        return format_html("<img width=150 height=130 border-radius: 5px; src='{}'>".format(self.image.url))
+        return format_html("<img width=150 height=160 border-radius: 5px; src='{}'>".format(self.image.url))
