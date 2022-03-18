@@ -9,9 +9,14 @@ from django.utils.translation import gettext as _
 
 # Create your views here.
 
-
-
-class ArticleListView(ListView):
+# تغییر کلاس بیس ویوو به تابع برای اکتیو شدن زبان فارسی
+def home(request):
     activate('fa')
-    template_name = 'home.html'
-    queryset = Article.objects.filter(status='p')
+    return render(request, 'home.html')
+
+
+
+# class ArticleListView(ListView):
+#     activate('fa')
+#     template_name = 'home.html'
+#     queryset = Article.objects.filter(status='p')
