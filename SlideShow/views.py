@@ -2,12 +2,16 @@ from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from .models import Article
+from django.utils.translation import activate, get_language_info
+from django.http import HttpResponse
+from django.utils.translation import gettext as _
+
 
 # Create your views here.
 
-from django.http import HttpResponse
 
 
 class ArticleListView(ListView):
+    activate('fa')
     template_name = 'home.html'
     queryset = Article.objects.filter(status='p')

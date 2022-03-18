@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-18 17:11+0330\n"
+"POT-Creation-Date: 2022-03-19 00:55+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-#: .\djangoProject\settings.py:18
-msgid "Persian"
-msgstr "فارسی"
-
-#: .\djangoProject\settings.py:19
-msgid "English"
-msgstr "انگلیسی"
 
 #: .\templates\home.html:64
 msgid "Home"
@@ -36,7 +28,7 @@ msgstr "دمو"
 
 #: .\templates\home.html:68
 msgid "Docs"
-msgstr "docs"
+msgstr "دایکیومنت ها"
 
 #: .\templates\home.html:70
 msgid "Download"
@@ -46,6 +38,14 @@ msgstr "دانلود"
 msgid "Autoplay"
 msgstr "نمایش اتوماتیک"
 
-#: .\templates\home.html:100
+#: .\templates\home.html:131
 msgid "Reza Mahmoudain"
 msgstr "رضا محمودیان"
+
+#: .\templates\slideshow.html:13
+msgid "play"
+msgstr "پخش"
+
+#: .\templates\slideshow.html:14
+msgid "Stop"
+msgstr "توقف"

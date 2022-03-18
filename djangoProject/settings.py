@@ -14,9 +14,15 @@ from pathlib import Path
 import os
 from django.utils.translation import gettext_lazy as _
 
+
+def gettext_noop(s):
+    return s
+
+LANGUAGE_CODE = 'de'
+
 LANGUAGES = [
-   ('fa', _('Persian')),
-   ('en', _('English')),
+    ('fa', 'Persian'),
+    ('en', 'English'),
 ]
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -53,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'djangoProject.urls'
@@ -60,7 +67,7 @@ ROOT_URLCONF = 'djangoProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'SlideShow/templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -136,5 +143,6 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOCALE_PATHS = [
-    BASE_DIR / 'locale'
+    BASE_DIR / 'locale',
+    BASE_DIR / 'SlideShow/locale/',
 ]
