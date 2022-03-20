@@ -7,6 +7,6 @@ from django.conf import settings
 
 urlpatterns = [
     # path('', ArticleListView.as_view(), name='index'),
-    path('', home, name='index'),
+    path('', home, name='home'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

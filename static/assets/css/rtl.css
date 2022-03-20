@@ -7,3 +7,13 @@ body{
 .owl-carousel.owl-theme.owl-loaded.owl-drag {
     direction: ltr;
 }
+
+.language{
+    float: left;
+}
+
+.language a{
+    color: black !important;
+    font-size: 17px;
+}
+

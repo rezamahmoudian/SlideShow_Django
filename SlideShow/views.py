@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from .models import Article
@@ -11,10 +11,8 @@ from django.utils.translation import gettext as _
 
 # تغییر کلاس بیس ویوو به تابع برای اکتیو شدن زبان فارسی
 def home(request):
-    activate('fa')
+    activate(request.GET.get('lang'))
     return render(request, 'home.html')
-
-
 
 # class ArticleListView(ListView):
 #     activate('fa')

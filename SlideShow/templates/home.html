@@ -2,10 +2,10 @@
 {% load slideshow %}
 {% load i18n %}
 {% get_current_language as LANGUAGE_CODE %}
-{% get_language_info for LANGUAGE_CODE as lang %}
+
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
     <!-- head -->
@@ -57,7 +57,12 @@
         <div class="large-12 columns">
             <div class="brand left">
                 <h3>
-                    <a href="{% static '/OwlCarousel2/">owl.carousel.js' %}"></a>
+                    <div class="language">
+                        <a href="{% url 'home' %}?lang=eun">
+                        {% translate "EN" %}</a>
+                        / <a href="{% url 'home' %}?lang=fa">
+                        {% translate "FA" %}</a>
+                    </div>
                 </h3>
             </div>
             <a id="toggle-nav" class="right">
@@ -70,7 +75,7 @@
                         <span class="download"></span>
                     </li>
                     <li><a href="#">{% translate "Docs" %}</a></li>
-                     <li class="active">
+                    <li class="active">
                         <a href="#">{% translate "Demos" %}</a>
                     </li>
                     <li><a href="#">{% translate "Home" %}</a></li>
@@ -99,8 +104,8 @@
         <div class="large-12 columns">
             <h5>
                 <a href="{% static '/OwlCarousel2/docs/support-contact.html">David Deutsch' %}"></a>
-            <a id="custom-tweet-button"
-                href="https://twitter.com/share?url=https://github.com/OwlCarousel2/OwlCarousel2&text=Owl Carousel -
+                <a id="custom-tweet-button"
+                   href="https://twitter.com/share?url=https://github.com/OwlCarousel2/OwlCarousel2&text=Owl Carousel -
                 This is so awesome! " target="_blank"></a>{% translate "Reza Mahmoudain" %}
             </h5>
         </div>
