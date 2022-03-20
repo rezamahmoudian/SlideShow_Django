@@ -1,7 +1,8 @@
 {% load static %}
 {% load slideshow %}
 {% load i18n %}
-
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as lang %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +22,9 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet'
           type='text/css'>
     <link rel="stylesheet" href="{% static '/assets/css/docs.theme.min.css' %}">
+    {% if LANGUAGE_CODE == 'fa' %}
+        <link rel="stylesheet" href="{% static '/assets/css/rtl.css' %}">
+    {% endif %}
 
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="{% static '/assets/owlcarousel/assets/owl.carousel.min.css' %}">
@@ -61,15 +65,15 @@
             </a>
             <div class="nav-bar">
                 <ul class="clearfix">
-                    <li><a href="{% static '/OwlCarousel2/index.html' %}">{% translate "Home" %}</a></li>
-                    <li class="active">
-                        <a href="{% static '/OwlCarousel2/demos/demos.html' %}">{% translate "Demos" %}</a>
-                    </li>
-                    <li><a href="{% static '/OwlCarousel2/docs/started-welcome.html' %}">{% translate "Docs" %}</a></li>
                     <li>
                         <a href="https://github.com/OwlCarousel2/OwlCarousel2/archive/2.3.4.zip">{% translate "Download" %}</a>
                         <span class="download"></span>
                     </li>
+                    <li><a href="#">{% translate "Docs" %}</a></li>
+                     <li class="active">
+                        <a href="#">{% translate "Demos" %}</a>
+                    </li>
+                    <li><a href="#">{% translate "Home" %}</a></li>
                 </ul>
             </div>
         </div>
@@ -80,7 +84,7 @@
 <section class="title">
     <div class="row">
         <div class="large-12 columns">
-            <h1>{% translate "Autoplay" %}</h1>
+            <h1>{% translate "Articles" %}</h1>
         </div>
     </div>
 </section>
@@ -88,37 +92,6 @@
 <!--  Demos -->
 
 {% slideshow_tmptag %}
-
-<section id="demos">
-    <div class="row">
-        <div class="large-12 columns">
-            <div class="owl-carousel owl-theme">
-
-            </div>
-            <a class="button secondary play">Play</a>
-            <a class="button secondary stop">Stop</a>
-            <script>
-                $(document).ready(function () {
-                    var owl = $('.owl-carousel');
-                    owl.owlCarousel({
-                        items: 4,
-                        loop: true,
-                        margin: 10,
-                        autoplay: true,
-                        autoplayTimeout: 1000,
-                        autoplayHoverPause: true
-                    });
-                    $('.play').on('click', function () {
-                        owl.trigger('play.owl.autoplay', [1000])
-                    })
-                    $('.stop').on('click', function () {
-                        owl.trigger('stop.owl.autoplay')
-                    })
-                })
-            </script>
-        </div>
-    </div>
-</section>
 
 <!-- footer -->
 <footer class="footer">

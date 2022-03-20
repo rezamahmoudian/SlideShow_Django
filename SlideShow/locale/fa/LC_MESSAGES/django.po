@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-19 00:55+0330\n"
+"POT-Creation-Date: 2022-03-20 12:16+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,10 +35,10 @@ msgid "Download"
 msgstr "دانلود"
 
 #: .\templates\home.html:83
-msgid "Autoplay"
-msgstr "نمایش اتوماتیک"
+msgid "Articles"
+msgstr "مقالات"
 
-#: .\templates\home.html:131
+#: .\templates\home.html:100
 msgid "Reza Mahmoudain"
 msgstr "رضا محمودیان"
 
@@ -49,3 +49,6 @@ msgstr "پخش"
 #: .\templates\slideshow.html:14
 msgid "Stop"
 msgstr "توقف"
+
+#~ msgid "Autoplay"
+#~ msgstr "نمایش اتوماتیک"

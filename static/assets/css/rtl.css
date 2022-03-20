@@ -1,0 +1,9 @@
+body{
+    direction: rtl;
+    text-align: right;
+
+}
+
+.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    direction: ltr;
+}
