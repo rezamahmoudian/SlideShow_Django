@@ -3,7 +3,23 @@
 .language{
     float: left;
 }
+
 .language a{
     color: black !important;
     font-size: 17px;
+}
+
+#demos .owl-carousel .item {
+    height: initial;
+    background: initial;
+    padding: initial;
+    position: relative;
+    background: #868787;
+}
+
+#demos .owl-carousel .item p {
+    position: initial;
+    bottom: -20px;
+    background-color: #7d7676 ;
+    color: white;
 }
