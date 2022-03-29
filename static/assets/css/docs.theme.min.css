@@ -18,8 +18,9 @@
 }
 
 #demos .owl-carousel .item p {
-    position: initial;
+    position: absolute;
     bottom: -20px;
-    background-color: #7d7676 ;
+    background-color: #626262 ;
     color: white;
+    width: 100%;
 }
