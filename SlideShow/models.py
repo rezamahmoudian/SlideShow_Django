@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.utils.html import format_html
+from translated_fields import TranslatedField
 from django.urls import reverse
 
 # Create your models here.
@@ -11,7 +12,7 @@ class Article(models.Model):
             ('p', "منتشر شده"),
             ('d', "پیش نویس"),
     )
-    title = models.CharField(max_length=200, verbose_name='عنوان')
+    title = TranslatedField(models.CharField(max_length=200, verbose_name='عنوان', default=0))
     slug = models.CharField(max_length=100, unique=True, verbose_name='آدرس')
     content = models.TextField(verbose_name='محتوا')
     image = models.ImageField(upload_to="images", verbose_name='تصویر')
