@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-20 12:16+0330\n"
+"POT-Creation-Date: 2022-03-30 21:40+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,35 +18,79 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: .\models.py:16
+msgid "title"
+msgstr "عنوان"
+
+#: .\models.py:17
+msgid "slug"
+msgstr "آدرس"
+
+#: .\models.py:18
+msgid "content"
+msgstr "محتوا"
+
+#: .\models.py:19
+msgid "image"
+msgstr "تصویر"
+
+#: .\models.py:20
+msgid "publish"
+msgstr "زمان انتشار"
+
+#: .\models.py:23
+msgid "status"
+msgstr "وضعیت"
+
+#: .\models.py:26
+#, fuzzy
+#| msgid "Articles"
+msgid "article"
+msgstr "مقاله"
+
+#: .\models.py:27
+#, fuzzy
+#| msgid "Articles"
+msgid "articles"
+msgstr "مقالات"
+
+#: .\templates\home.html:62
+msgid "EN"
+msgstr "انگلیسی"
+
 #: .\templates\home.html:64
-msgid "Home"
-msgstr "خانه"
+msgid "FA"
+msgstr "فارسی"
 
-#: .\templates\home.html:66
-msgid "Demos"
-msgstr "دمو"
-
-#: .\templates\home.html:68
-msgid "Docs"
-msgstr "دایکیومنت ها"
-
-#: .\templates\home.html:70
+#: .\templates\home.html:74
 msgid "Download"
 msgstr "دانلود"
 
-#: .\templates\home.html:83
+#: .\templates\home.html:77
+msgid "Docs"
+msgstr "دایکیومنت ها"
+
+#: .\templates\home.html:79
+msgid "Demos"
+msgstr "دمو"
+
+#: .\templates\home.html:81
+msgid "Home"
+msgstr "خانه"
+
+#: .\templates\home.html:92
 msgid "Articles"
 msgstr "مقالات"
 
-#: .\templates\home.html:100
+#: .\templates\home.html:109
 msgid "Reza Mahmoudain"
 msgstr "رضا محمودیان"
 
-#: .\templates\slideshow.html:13
+#: .\templates\slideshow.html:15
 msgid "play"
 msgstr "پخش"
 
-#: .\templates\slideshow.html:14
+#: .\templates\slideshow.html:16
 msgid "Stop"
 msgstr "توقف"
 
